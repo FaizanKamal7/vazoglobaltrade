@@ -1,0 +1,202 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../js/**/*.vue';
+
+/* ─── Custom Theme Tokens ─────────────────────────────────────────────────── */
+@theme {
+    --color-vazo-dark:       #030806;
+    --color-vazo-dark-2:     #07110d;
+    --color-vazo-card:       #0a1a13;
+    --color-vazo-card-2:     #0f2219;
+    --color-vazo-border:     #1c3528;
+    --color-vazo-gold:       #C9A84C;
+    --color-vazo-gold-dim:   #8a7234;
+    --color-vazo-gold-light: #E2C47A;
+    --color-vazo-copper:     #B87333;
+    --color-vazo-cream:      #F5F0E8;
+    --color-vazo-cream-2:    #E8E0D0;
+    --color-vazo-muted:      #7a6e5f;
+    --color-vazo-muted-2:    #9a8c7a;
+    --font-serif:  'Playfair Display', Georgia, 'Times New Roman', serif;
+    --font-sans:   'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ─── Light theme token overrides ────────────────────────────────────────── */
+html.light {
+    --color-vazo-dark:       #F8F5F0;
+    --color-vazo-dark-2:     #EDE8DF;
+    --color-vazo-card:       #FFFFFF;
+    --color-vazo-card-2:     #F4F0E8;
+    --color-vazo-border:     #D4C9B5;
+    --color-vazo-gold:       #B8902A;
+    --color-vazo-gold-dim:   #7A6020;
+    --color-vazo-gold-light: #9E7C1C;
+    --color-vazo-copper:     #A0561E;
+    --color-vazo-cream:      #1A1510;
+    --color-vazo-cream-2:    #2E2318;
+    --color-vazo-muted:      #9A8B78;
+    --color-vazo-muted-2:    #6A5B48;
+}
+
+/* ─── Base ────────────────────────────────────────────────────────────────── */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #030806;
+    color: #F5F0E8;
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+html.light body {
+    background-color: #F8F5F0;
+    color: #1A1510;
+}
+
+/* ─── Typography helpers ──────────────────────────────────────────────────── */
+.font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.text-gold-gradient {
+    background: linear-gradient(135deg, #E2C47A 0%, #C9A84C 50%, #B87333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gold-underline {
+    position: relative;
+    display: inline-block;
+}
+.gold-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #C9A84C, transparent);
+}
+.gold-underline-center::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+}
+
+/* ─── Scroll-reveal ───────────────────────────────────────────────────────── */
+.section-fade {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.75s ease, transform 0.75s ease;
+}
+.section-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ─── Card glow on hover ──────────────────────────────────────────────────── */
+.card-glow {
+    transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+.card-glow:hover {
+    box-shadow: 0 0 28px rgba(201,168,76,0.18), 0 8px 32px rgba(0,0,0,0.45);
+    transform: translateY(-4px);
+}
+
+/* ─── Navbar ──────────────────────────────────────────────────────────────── */
+.navbar-scrolled {
+    background: rgba(3,8,6,0.96) !important;
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(201,168,76,0.14);
+    box-shadow: 0 4px 32px rgba(0,0,0,0.5);
+}
+html.light .navbar-scrolled {
+    background: rgba(248,245,240,0.96) !important;
+    border-bottom: 1px solid rgba(184,144,42,0.2);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+}
+
+/* ─── Form inputs ─────────────────────────────────────────────────────────── */
+.form-input {
+    background: rgba(10,26,19,0.85);
+    border: 1px solid #1c3528;
+    color: #F5F0E8;
+    border-radius: 8px;
+    padding: 12px 16px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.925rem;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    outline: none;
+    appearance: none;
+}
+.form-input::placeholder {
+    color: #7a6e5f;
+}
+.form-input:focus {
+    border-color: #C9A84C;
+    box-shadow: 0 0 0 3px rgba(201,168,76,0.12);
+}
+select.form-input option {
+    background: #0a1a13;
+    color: #F5F0E8;
+}
+html.light .form-input {
+    background: #FFFFFF;
+    border-color: #D4C9B5;
+    color: #1A1510;
+}
+html.light .form-input::placeholder {
+    color: #9A8B78;
+}
+html.light .form-input:focus {
+    border-color: #B8902A;
+    box-shadow: 0 0 0 3px rgba(184,144,42,0.14);
+}
+html.light select.form-input option {
+    background: #FFFFFF;
+    color: #1A1510;
+}
+
+/* ─── Scrollbar ───────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #030806; }
+::-webkit-scrollbar-thumb { background: #1c3528; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #C9A84C; }
+html.light ::-webkit-scrollbar-track { background: #F8F5F0; }
+html.light ::-webkit-scrollbar-thumb { background: #D4C9B5; }
+html.light ::-webkit-scrollbar-thumb:hover { background: #B8902A; }
+
+/* ─── Card glow — light mode adjustment ──────────────────────────────────── */
+html.light .card-glow:hover {
+    box-shadow: 0 0 28px rgba(184,144,42,0.15), 0 8px 32px rgba(0,0,0,0.12);
+}
+
+/* ─── Hero section: always dark text tones (sits over dark photo) ─────────── */
+html.light .hero-content {
+    --color-vazo-cream:      #F5F0E8;
+    --color-vazo-cream-2:    #E8E0D0;
+    --color-vazo-muted:      #7a6e5f;
+    --color-vazo-muted-2:    #9a8c7a;
+    --color-vazo-gold:       #C9A84C;
+    --color-vazo-gold-light: #E2C47A;
+}
+
+/* ─── Transparent navbar (over dark hero): always white text ──────────────── */
+html.light header:not(.navbar-scrolled) {
+    --color-vazo-cream:      #F5F0E8;
+    --color-vazo-muted:      #7a6e5f;
+    --color-vazo-muted-2:    #9a8c7a;
+    --color-vazo-gold:       #C9A84C;
+    --color-vazo-border:     #1c3528;
+}
+
+/* ─── Theme transition ────────────────────────────────────────────────────── */
+*, *::before, *::after {
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.2s ease;
+}
