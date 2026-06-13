@@ -31,9 +31,6 @@ jobs:
           php-version: '8.3'
           extensions: mbstring, pdo, pdo_mysql, openssl, tokenizer, xml, ctype, json
 
-      - name: Install Composer dependencies
-        run: composer update --no-dev --optimize-autoloader --no-interaction --prefer-dist
-
       # ── Deploy Laravel app files (outside public_html) ────────────────────
       - name: Deploy app to ~/vazoglobaltrade/
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -47,6 +44,7 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
+            **/vendor/**
             .env
             .env.*
             storage/logs/**
