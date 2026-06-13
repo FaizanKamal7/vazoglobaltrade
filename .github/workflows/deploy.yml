@@ -32,7 +32,7 @@ jobs:
           extensions: mbstring, pdo, pdo_mysql, openssl, tokenizer, xml, ctype, json
 
       - name: Install Composer dependencies
-        run: composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist
+        run: composer update --no-dev --optimize-autoloader --no-interaction --prefer-dist
 
       # ── Deploy Laravel app files (outside public_html) ────────────────────
       - name: Deploy app to ~/vazoglobaltrade/
