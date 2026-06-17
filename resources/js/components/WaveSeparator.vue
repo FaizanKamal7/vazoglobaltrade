@@ -31,7 +31,7 @@
 
 <script setup>
 const props = defineProps({
-    fill:      { type: String,  default: '#030806' },
+    fill:      { type: String,  default: '#141210' },
     height:    { type: Number,  default: 80 },
     direction: { type: String,  default: 'down' },
     wrapClass: { type: String,  default: '' },

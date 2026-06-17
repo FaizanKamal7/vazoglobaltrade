@@ -21,7 +21,7 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-[#030806] text-[#F5F0E8]">
+<body class="bg-[#141210] text-[#F5F0E8]">
 
     <div id="app"></div>
 

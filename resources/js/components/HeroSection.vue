@@ -19,17 +19,17 @@
         <!-- ── Dark gradient overlays — text stays legible over the photo ── -->
         <div
             class="absolute inset-0"
-            style="background: linear-gradient(160deg, rgba(3,8,6,0.92) 0%, rgba(3,8,6,0.75) 50%, rgba(3,8,6,0.60) 100%)"
+            style="background: linear-gradient(160deg, rgba(20,18,16,0.92) 0%, rgba(20,18,16,0.75) 50%, rgba(20,18,16,0.60) 100%)"
         ></div>
         <!-- Subtle warm glow to anchor the content area -->
         <div
             class="absolute inset-0"
-            style="background: radial-gradient(ellipse 80% 60% at 40% 50%, rgba(13,34,24,0.55) 0%, transparent 70%)"
+            style="background: radial-gradient(ellipse 80% 60% at 40% 50%, rgba(34,25,18,0.45) 0%, transparent 70%)"
         ></div>
         <!-- Bottom vignette — merges into the next section -->
         <div
             class="absolute bottom-0 left-0 right-0 h-56"
-            style="background: linear-gradient(to top, #030806 0%, transparent 100%)"
+            style="background: linear-gradient(to top, #141210 0%, transparent 100%)"
         ></div>
 
         <!-- ── Decorative concentric circles (top-right) ───────────────────── -->

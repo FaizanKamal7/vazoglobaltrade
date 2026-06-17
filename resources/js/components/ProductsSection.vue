@@ -52,7 +52,7 @@
 
                         <!-- Bottom gradient — smooth card→body transition -->
                         <div class="absolute inset-x-0 bottom-0 h-2/3"
-                             style="background: linear-gradient(to top, rgba(10,26,19,0.95) 0%, rgba(10,26,19,0.3) 60%, transparent 100%)">
+                             style="background: linear-gradient(to top, rgba(34,29,25,0.95) 0%, rgba(34,29,25,0.3) 60%, transparent 100%)">
                         </div>
 
                         <!-- Subtle glow blob (always visible as atmosphere) -->
