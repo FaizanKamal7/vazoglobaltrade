@@ -29,7 +29,7 @@
         <!-- Bottom vignette — merges into the next section -->
         <div
             class="absolute bottom-0 left-0 right-0 h-56"
-            style="background: linear-gradient(to top, #141210 0%, transparent 100%)"
+            style="background: linear-gradient(to top, #1E1A16 0%, transparent 100%)"
         ></div>
 
         <!-- ── Decorative concentric circles (top-right) ───────────────────── -->

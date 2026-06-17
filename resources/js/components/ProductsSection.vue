@@ -52,7 +52,7 @@
 
                         <!-- Bottom gradient — smooth card→body transition -->
                         <div class="absolute inset-x-0 bottom-0 h-2/3"
-                             style="background: linear-gradient(to top, rgba(34,29,25,0.95) 0%, rgba(34,29,25,0.3) 60%, transparent 100%)">
+                             style="background: linear-gradient(to top, rgba(46,39,32,0.95) 0%, rgba(46,39,32,0.3) 60%, transparent 100%)">
                         </div>
 
                         <!-- Subtle glow blob (always visible as atmosphere) -->
@@ -135,16 +135,16 @@ const ctaEl     = ref(null)
 
 const productKeys = ['blackPepper', 'whitePepper', 'cloves', 'cinnamon', 'nutmeg', 'chilli', 'ginger', 'cardamom']
 
-// Accurate spice photos via Unsplash CDN
+// Spice photos via Unsplash CDN
 const spicePhotos = {
     blackPepper: 'https://images.unsplash.com/photo-1599909533731-ca2c84ff7c98?auto=format&fit=crop&w=600&h=440&q=80',
-    whitePepper: 'https://images.unsplash.com/photo-1542444459-91ffe3457f3b?auto=format&fit=crop&w=600&h=440&q=80',
+    whitePepper: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&h=440&q=80',
     cloves:      'https://images.unsplash.com/photo-1611499012843-7eecc60e5ae4?auto=format&fit=crop&w=600&h=440&q=80',
-    cinnamon:    'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&h=440&q=80',
-    nutmeg:      'https://images.unsplash.com/photo-1583475778947-fae9a96fe7e7?auto=format&fit=crop&w=600&h=440&q=80',
+    cinnamon:    'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=600&h=440&q=80',
+    nutmeg:      'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&h=440&q=80',
     chilli:      'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=600&h=440&q=80',
     ginger:      'https://images.unsplash.com/photo-1573671494527-b89d251c4cb1?auto=format&fit=crop&w=600&h=440&q=80',
-    cardamom:    'https://images.unsplash.com/photo-1649183476494-f0daf33c3e71?auto=format&fit=crop&w=600&h=440&q=80',
+    cardamom:    'https://images.unsplash.com/photo-1638523252780-c10f61bea83b?auto=format&fit=crop&w=600&h=440&q=80',
 }
 
 // Color wash applied via mix-blend-mode:multiply

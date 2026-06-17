@@ -1,7 +1,7 @@
 import { ref, watch } from 'vue'
 
 const theme = ref(
-    (() => { try { return localStorage.getItem('vazo_theme') || 'dark' } catch { return 'dark' } })()
+    (() => { try { return localStorage.getItem('vazo_theme') || 'light' } catch { return 'light' } })()
 )
 
 // Apply immediately to prevent flash of wrong theme before Vue mounts
