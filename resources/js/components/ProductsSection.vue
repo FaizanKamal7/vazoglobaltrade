@@ -137,14 +137,14 @@ const productKeys = ['blackPepper', 'whitePepper', 'cloves', 'cinnamon', 'nutmeg
 
 // Spice photos via Unsplash CDN
 const spicePhotos = {
-    blackPepper: 'https://images.unsplash.com/photo-1599909533731-ca2c84ff7c98?auto=format&fit=crop&w=600&h=440&q=80',
-    whitePepper: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&h=440&q=80',
-    cloves:      'https://images.unsplash.com/photo-1611499012843-7eecc60e5ae4?auto=format&fit=crop&w=600&h=440&q=80',
-    cinnamon:    'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=600&h=440&q=80',
-    nutmeg:      'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&h=440&q=80',
-    chilli:      'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=600&h=440&q=80',
-    ginger:      'https://images.unsplash.com/photo-1573671494527-b89d251c4cb1?auto=format&fit=crop&w=600&h=440&q=80',
-    cardamom:    'https://images.unsplash.com/photo-1638523252780-c10f61bea83b?auto=format&fit=crop&w=600&h=440&q=80',
+    blackPepper: 'https://images.unsplash.com/photo-1591801058986-9e28e68670f7?auto=format&fit=crop&w=600&h=440&q=80',
+    whitePepper: 'https://images.unsplash.com/photo-1656001901235-7f4fcf73ee5a?auto=format&fit=crop&w=600&h=440&q=80',
+    cloves:      'https://images.unsplash.com/photo-1737098211551-8eecee542d88?auto=format&fit=crop&w=600&h=440&q=80',
+    cinnamon:    'https://images.unsplash.com/photo-1553499944-e4297a0af1bd?auto=format&fit=crop&w=600&h=440&q=80',
+    nutmeg:      'https://images.unsplash.com/photo-1705231956273-a0c993f7a1d3?auto=format&fit=crop&w=600&h=440&q=80',
+    chilli:      'https://images.unsplash.com/photo-1546860255-95536c19724e?auto=format&fit=crop&w=600&h=440&q=80',
+    ginger:      'https://images.unsplash.com/photo-1635843104103-ddd88e1c5141?auto=format&fit=crop&w=600&h=440&q=80',
+    cardamom:    'https://images.unsplash.com/photo-1622824497447-b284a5493027?auto=format&fit=crop&w=600&h=440&q=80',
 }
 
 // Color wash applied via mix-blend-mode:multiply
