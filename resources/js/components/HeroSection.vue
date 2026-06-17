@@ -9,7 +9,7 @@
                 src="https://www.thedailymeal.com/img/gallery/how-to-revive-stale-spices/spices_hero.jpg"
                 alt=""
                 class="w-full h-full object-cover object-center"
-                style="opacity: 0.70; filter: saturate(0.7) brightness(0.65); transform: scale(1.03);"
+                style="opacity: 0.88; filter: saturate(0.8) brightness(0.75); transform: scale(1.03);"
                 loading="eager"
                 fetchpriority="high"
                 @error="e => e.currentTarget.style.display='none'"
@@ -19,7 +19,7 @@
         <!-- ── Dark gradient overlays — text stays legible over the photo ── -->
         <div
             class="absolute inset-0"
-            style="background: linear-gradient(160deg, rgba(20,18,16,0.92) 0%, rgba(20,18,16,0.75) 50%, rgba(20,18,16,0.60) 100%)"
+            style="background: linear-gradient(to right, rgba(20,18,16,0.96) 0%, rgba(20,18,16,0.88) 45%, rgba(20,18,16,0.30) 100%)"
         ></div>
         <!-- Subtle warm glow to anchor the content area -->
         <div

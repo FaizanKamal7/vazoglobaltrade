@@ -189,7 +189,7 @@
                                 </div>
                                 <div>
                                     <p class="text-vazo-muted text-xs uppercase tracking-wide mb-0.5">WhatsApp</p>
-                                    <a href="https://wa.me/905513620343" target="_blank" rel="noopener noreferrer" class="text-vazo-cream text-sm font-medium hover:text-green-400 transition-colors">+90 551 362 03 43 (Sherly)</a>
+                                    <a href="https://wa.me/905513620343" target="_blank" rel="noopener noreferrer" class="text-vazo-cream text-sm font-medium hover:text-green-400 transition-colors">+90 551 362 03 43</a>
                                 </div>
                             </div>
                         </div>

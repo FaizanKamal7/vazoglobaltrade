@@ -63,9 +63,9 @@ export default {
                 name:        'Pala',
                 description: "Pala premium dari Kepulauan Banda, memberikan kehangatan mendalam dan kompleksitas rasa yang kaya.",
             },
-            turmeric: {
-                name:        'Kunyit',
-                description: "Kunyit emas cerah dari Jawa dan Sumatera — kadar kurkumin tinggi untuk kebutuhan kuliner dan kesehatan.",
+            chilli: {
+                name:        'Cabai Pedas',
+                description: "Cabai Indonesia yang berapi dari Jawa dan Sulawesi — kandungan kapsaisin tinggi dan tingkat kepedasan yang kuat, ideal untuk produsen makanan dan peramu rempah.",
             },
             ginger: {
                 name:        'Jahe',

@@ -63,9 +63,9 @@ export default {
                 name:        'Nutmeg',
                 description: "Premium nutmeg from the Banda Islands, delivering deep warmth and earthy complexity.",
             },
-            turmeric: {
-                name:        'Turmeric',
-                description: "Vibrant golden turmeric from Java and Sumatra — high in curcumin for culinary and wellness applications.",
+            chilli: {
+                name:        'Spicy Chilli',
+                description: "Fiery Indonesian chillies from Java and Sulawesi — rich capsaicin content and bold heat levels ideal for food manufacturers and spice blenders.",
             },
             ginger: {
                 name:        'Ginger',

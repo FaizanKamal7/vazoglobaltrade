@@ -63,9 +63,9 @@ export default {
                 name:        'Küçük Hindistancevizi',
                 description: "Banda Adaları'ndan premium küçük hindistancevizi, derin sıcaklık ve toprak karmaşıklığı sunuyor.",
             },
-            turmeric: {
-                name:        'Zerdeçal',
-                description: "Java ve Sumatra'dan canlı altın zerdeçal — mutfak ve sağlık uygulamaları için yüksek kurkumin içeriğine sahip.",
+            chilli: {
+                name:        'Acı Biber',
+                description: "Java ve Sulawesi'den Endonezya'nın ateşli biberleri — gıda üreticileri ve baharat harmancıları için ideal yüksek kapsaisin içeriği ve güçlü acılık seviyeleriyle.",
             },
             ginger: {
                 name:        'Zencefil',
