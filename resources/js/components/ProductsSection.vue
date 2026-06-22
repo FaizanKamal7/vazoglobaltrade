@@ -22,7 +22,7 @@
             </div>
 
             <!-- Products grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div
                     v-for="(key, index) in productKeys"
                     :key="key"
@@ -133,7 +133,7 @@ const headerEl  = ref(null)
 const cardEls   = ref([])
 const ctaEl     = ref(null)
 
-const productKeys = ['blackPepper', 'whitePepper', 'cloves', 'cinnamon', 'nutmeg', 'chilli', 'ginger', 'cardamom']
+const productKeys = ['blackPepper', 'whitePepper', 'cloves', 'cinnamon', 'nutmeg', 'cardamom']
 
 // Spice photos via Unsplash CDN
 const spicePhotos = {
@@ -142,9 +142,7 @@ const spicePhotos = {
     cloves:      'https://images.unsplash.com/photo-1737098211551-8eecee542d88?auto=format&fit=crop&w=600&h=440&q=80',
     cinnamon:    'https://images.unsplash.com/photo-1553499944-e4297a0af1bd?auto=format&fit=crop&w=600&h=440&q=80',
     nutmeg:      'https://images.unsplash.com/photo-1705231956273-a0c993f7a1d3?auto=format&fit=crop&w=600&h=440&q=80',
-    chilli:      'https://images.unsplash.com/photo-1546860255-95536c19724e?auto=format&fit=crop&w=600&h=440&q=80',
-    ginger:      'https://images.unsplash.com/photo-1635843104103-ddd88e1c5141?auto=format&fit=crop&w=600&h=440&q=80',
-    cardamom:    'https://images.unsplash.com/photo-1622824497447-b284a5493027?auto=format&fit=crop&w=600&h=440&q=80',
+    cardamom:    'https://inaexport.id/uploads/Eksportir_Product/Image/22812/1696471728__Kapulaga%20-Indo.jpg?auto=format&fit=crop&w=600&h=440&q=80',
 }
 
 // Color wash applied via mix-blend-mode:multiply
@@ -154,8 +152,6 @@ const spiceWash = {
     cloves:      'rgba(80,28,8,0.45)',
     cinnamon:    'rgba(140,68,0,0.40)',
     nutmeg:      'rgba(100,48,20,0.40)',
-    chilli:      'rgba(160,20,10,0.40)',
-    ginger:      'rgba(160,120,20,0.35)',
     cardamom:    'rgba(30,80,30,0.40)',
 }
 
@@ -166,8 +162,6 @@ const spiceBgs = {
     cloves:      'linear-gradient(145deg, #1a0a05 0%, #2d1208 100%)',
     cinnamon:    'linear-gradient(145deg, #1a0e03 0%, #2d1905 100%)',
     nutmeg:      'linear-gradient(145deg, #160a04 0%, #241508 100%)',
-    chilli:      'linear-gradient(145deg, #1a0400 0%, #2d0800 100%)',
-    ginger:      'linear-gradient(145deg, #14100a 0%, #231c0e 100%)',
     cardamom:    'linear-gradient(145deg, #071208 0%, #0d1e0e 100%)',
 }
 
@@ -178,8 +172,6 @@ const spiceGlows = {
     cloves:      'radial-gradient(circle, #8B4513 0%, transparent 70%)',
     cinnamon:    'radial-gradient(circle, #C47722 0%, transparent 70%)',
     nutmeg:      'radial-gradient(circle, #A0522D 0%, transparent 70%)',
-    chilli:      'radial-gradient(circle, #cc2200 0%, transparent 70%)',
-    ginger:      'radial-gradient(circle, #C9A84C 0%, transparent 70%)',
     cardamom:    'radial-gradient(circle, #4a7c3f 0%, transparent 70%)',
 }
 
@@ -190,8 +182,6 @@ const spiceGradients = {
     cloves:      'linear-gradient(90deg, #4a2010, #8B4513, #4a2010)',
     cinnamon:    'linear-gradient(90deg, #7B3F00, #C47722, #7B3F00)',
     nutmeg:      'linear-gradient(90deg, #5C3317, #A0522D, #5C3317)',
-    chilli:      'linear-gradient(90deg, #7a1000, #cc2200, #7a1000)',
-    ginger:      'linear-gradient(90deg, #8B6914, #C9A84C, #8B6914)',
     cardamom:    'linear-gradient(90deg, #2D5A27, #4a7c3f, #2D5A27)',
 }
 
