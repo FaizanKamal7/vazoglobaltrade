@@ -36,7 +36,7 @@
                     <!-- Gold rule -->
                     <div class="mt-8 flex items-center gap-3">
                         <span class="h-px flex-1 bg-gradient-to-r from-vazo-gold/40 to-transparent"></span>
-                        <span class="text-vazo-gold/50 text-xs tracking-widest uppercase">Est. 2024</span>
+                        <span class="text-vazo-gold/50 text-xs tracking-widest uppercase">Est. {{ new Date().getFullYear() }}</span>
                     </div>
                 </div>
 
